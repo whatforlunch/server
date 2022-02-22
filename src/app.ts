@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/1', (req, res) => {
-  res.send('sadfadf')
-})
+  res.send('sadfadf');
+});
 
 app.get('/posts', (req, res) => {
   res.json([
@@ -18,6 +18,11 @@ app.get('/posts', (req, res) => {
     { id: 3, content: 'hello3' },
   ]);
 });
+
+type A = {};
+
+const a: A = 'aa';
+const b: String = 'aa';
 
 app.listen(3010, () => {
   console.log('실행중');
